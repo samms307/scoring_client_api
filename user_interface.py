@@ -37,22 +37,6 @@ st.set_page_config(page_title="Credit Customer Prediction Project")
 clients = pd.read_csv("clients_api.csv")
 
 
-a = ["Age","Employment status", "Income", "Amount of the credit",
- "Amount of the annuity", "customer has other active credits in progress ?"]
-
-b = ["NAME_FAMILY_STATUS","NAME_EDUCATION_TYPE","NAME_INCOME_TYPE"]
-
-c=["SK_ID_CURR","DAYS_BIRTH", "CODE_GENDER", "NAME_FAMILY_STATUS", 
-                   "NAME_EDUCATION_TYPE","AMT_INCOME_TOTAL", "NAME_INCOME_TYPE"]
-
-d=["SK_ID_CURR", "AMT_CREDIT", "ANNUITY_INCOME_PERC", "AMT_INCOME_TOTAL",
-                   "BURO_CREDIT_ACTIVE_Active_MEAN"]
-
-
-
-x = np.unique(a+b+c+d).tolist()
-pd.DataFrame(x).rename(columns={0:"col"}).to_excel("features_dashboard.xlsx",index=False)
-
 list_id_clients = clients["SK_ID_CURR"].unique()
 
 
