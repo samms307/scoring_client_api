@@ -34,7 +34,7 @@ st.set_page_config(page_title="Credit Customer Prediction Project")
 
 
     
-clients = pd.read_csv("clients_api.csv")
+clients = pd.read_csv("clients_dashboard.csv")
 
 
 list_id_clients = clients["SK_ID_CURR"].unique()
@@ -68,7 +68,7 @@ display_comparaison(customer_res, idx_client, selected_cust_features)
 if st.sidebar.button('Run Prediction'):
     
     # url de l'API hébergé dans le cloud
-    root_url_backend = 'https://projet-scoring-client.onrender.com' 
+    root_url_backend = 'https://scoring-client-api.onrender.com' 
     
     # url de l'API sur l'ordi
     # root_url_backend = 'http://127.0.0.1:8000' 
