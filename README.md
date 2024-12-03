@@ -17,8 +17,10 @@ Le dataset se compose de plusieurs fichiers. Cependant pour ce projet nous avons
 Les dépendances sont spécifiés dans le fichier requirements.txt
 
 ## Déployement
-L'application est déployée sur Render et accessible via le lien suivant : https://scoring-client-dashboard.onrender.com
--------------------
+L'application est entièrement déployée sur **Render** et accessible en ligne via le lien suivant :  
+[Accéder à l'application](https://scoring-client-dashboard.onrender.com)  
+
+
 
 
 
