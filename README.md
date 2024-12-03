@@ -18,3 +18,4 @@ L'API permet d'obtenir les prédictions du modèle à partir d'un identifiant cl
 
 **URL de l'API** : [Lien vers l'API FastAPI sur Render](https://scoring-client-dashboard.onrender.com/)
 
+
