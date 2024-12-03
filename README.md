@@ -24,21 +24,7 @@ L'application est entièrement déployée sur **Render** et accessible en ligne 
 
 
 
-Projet_Scoring_Credit/
-├── app/
-│   ├── main.py               # Code principal pour FastAPI
-│   ├── model.py              # Chargement et prédiction du modèle
-│   └── utils.py              # Fonctions utilitaires (prétraitement, etc.)
-├── dashboard/
-│   └── dashboard_app.py      # Code pour l'application Streamlit
-├── models/
-│   └── model.pkl             # Modèle entraîné (fichier de sauvegarde)
-├── data/
-│   ├── application_train.csv # Fichier de données d'entraînement
-│   └── application_test.csv  # Fichier de données de test
-├── requirements.txt          # Dépendances du projet
-├── README.md                 # Présentation du projet
-└── .gitignore                # Fichiers à ignorer par Git
+
 
 
 
