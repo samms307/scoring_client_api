@@ -3,7 +3,7 @@
 ## Description des Données
 Les données utilisées dans ce projet proviennent du dataset **Home Credit Default Risk**, disponible sur [Kaggle](https://www.kaggle.com/c/home-credit-default-risk). Ce dataset contient des informations financières et personnelles sur les clients, et permet de prédire la probabilité qu’un client fasse défaut sur son crédit.
 
-Le dataset se compose de plusieurs fichiers. Cependant, pour ce projet, nous avons choisi de travailler uniquement avec les deux fichiers suivants :
+Le dataset se compose de plusieurs fichiers. Cependant pour ce projet nous avons choisi de travailler uniquement avec les deux fichiers suivants :
 - **application_train.csv** : Ce fichier contient les données d’entraînement, incluant les informations des clients (âge, revenu, statut familial, etc.) ainsi que la variable cible **TARGET** (1 = défaut de paiement, 0 = non défaut).
 - **application_test.csv** : - **application_test.csv** : Fichier utilisé pour tester le modèle après l'entraînement, afin d'évaluer ses performances sur de nouvelles données en production.
 
