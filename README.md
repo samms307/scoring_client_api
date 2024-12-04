@@ -29,7 +29,7 @@ Le tableau de bord interactif permet de :
 - **Exécuter une prédiction** via le bouton "Run Prediction" pour afficher la probabilité de remboursement.
 
 ## Installation des Dépendances  
- Liste des dépendances nécessaires pour exécuter le projet spécifiés dans le fichier requirements.txt
+ Liste des dépendances nécessaires pour exécuter le projet dans le fichier requirements.txt
   
 
 ## Structure du Projet
