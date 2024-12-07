@@ -63,7 +63,7 @@ Le tableau de bord interactif permet de :
 
 
 
-## 📈 **Étapes Clés du Projet**
+# 📈 **Étapes Clés du Projet**
 
 ### **1️⃣ Prétraitement des Données et Contrôle du Data Leakage**
 
@@ -91,8 +91,7 @@ Après avoir prétraité les données et éliminé tout risque de data leakage, 
 
 - **Sélection du modèle :** Nous avons comparé plusieurs modèles, à commencer par la régression logistique et en incluant des modèles plus complexes comme Random Forest et LightGBM, adaptés aux données déséquilibrées. Les performances ont été évaluées via la métrique AUC-ROC, en calculant la moyenne des scores et l'écart-type pour mesurer la stabilité. Pour assurer une évaluation robuste, nous avons utilisé une validation croisée stratifiée, garantissant que la proportion des classes reste constante dans chaque pli, ce qui évite tout biais dans l'entraînement et permet au modèle de mieux généraliser.
 
-- **Optimisation du seuil de décision :**  
-  L’ajustement du seuil de probabilité a été effectué pour optimiser la classification des défauts de paiement, en tenant compte des erreurs de classification (faux négatifs et faux positifs), qui peuvent avoir un impact financier significatif pour l'entreprise.  
+- **Optimisation du seuil de décision :**  L’ajustement du seuil de probabilité a été effectué pour optimiser la classification des défauts de paiement, en tenant compte des erreurs de classification (faux négatifs et faux positifs), qui peuvent avoir un impact financier significatif pour l'entreprise.  
   Deux approches ont été explorées :  
   1. **Maximisation de la sensibilité et de la spécificité :** Trouver un seuil qui équilibre les faux positifs et faux négatifs pour améliorer la performance globale et minimiser les pertes.  
   2. **Optimisation de la précision et du rappel :** Prioriser la détection des clients risqués, en particulier pour minimiser les faux négatifs, afin de réduire les risques financiers et améliorer la gestion du crédit.
@@ -100,6 +99,9 @@ Après avoir prétraité les données et éliminé tout risque de data leakage, 
   
 - **Explicabilité du modèle :**  Le modèle **LightGBM** a été utilisé pour les prédictions, et pour en comprendre les décisions, nous avons appliqué **LIME** pour expliquer chaque prédiction (ex : refus de prêt). L'**importance des caractéristiques** a permis d'identifier les variables influentes globalement (comme le revenu et l'historique de crédit). Ces méthodes assurent que les décisions du modèle sont compréhensibles et justifiables, répondant ainsi aux exigences réglementaires.
 
+
+-**Détection du Data Drift :**
+Pour assurer la performance continue du modèle en production, nous avons surveillé l'évolution des données avec la `bibliothèque Evidently`. Evidently permet de détecter le Data Drift en comparant les distributions des données d'entrée en production avec celles des données d’entraînement. Cette surveillance du drift des données aide à identifier des écarts significatifs dans les caractéristiques des données, garantissant ainsi que le modèle continue à fournir des prédictions fiables même lorsque les données changent avec le temps.
 
 👉 **[Voir le notebook de modélisation pour l'interprétation des résultats](https://github.com/samms307/scoring_client_api/blob/main/Final_Mod%C3%A9lisation.ipynb)**
 
