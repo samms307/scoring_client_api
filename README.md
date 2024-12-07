@@ -102,8 +102,8 @@ Après avoir prétraité les données et éliminé tout risque de data leakage, 
 
 - **Détection du Data Drift :**
 Pour assurer la performance continue du modèle en production, nous avons surveillé l'évolution des données avec la `bibliothèque Evidently`. Evidently permet de détecter le Data Drift en comparant les distributions des données d'entrée en production avec celles des données d’entraînement. Cette surveillance du drift des données aide à identifier des écarts significatifs dans les caractéristiques des données, garantissant ainsi que le modèle continue à fournir des prédictions fiables même lorsque les données changent avec le temps.
+[Pour plus de détails sur la détection du data drift, vous pouvez consulter le rapport d'analyse de dérive des données ici](https://github.com/samms307/scoring_client_api/blob/main/report_datadrift.html)
 
-[Pour plus de détails sur la détection du data drift, vous pouvez consulter le rapport d'analyse de dérive des données ici]([lien_vers_le_rapport](https://github.com/samms307/scoring_client_api/blob/main/report_datadrift.html))
 
 
 👉 **[Voir le notebook de modélisation pour l'interprétation des résultats](https://github.com/samms307/scoring_client_api/blob/main/Final_Mod%C3%A9lisation.ipynb)**
