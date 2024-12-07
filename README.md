@@ -82,7 +82,7 @@ Résumé des étapes principales :
 De plus, pour les modèles utilisés dans ce projet, j'ai intégré le paramètre class_weight='balanced', ce qui permet d'ajuster automatiquement les poids des classes et d'assurer une meilleure prise en compte des classes minoritaires dans l'entraînement du modèle.
   
 
-👉 **[ Voir plus de détails dans le notebook de prétraitement](lien_vers_notebook_pretraitement)**
+👉 **[ Voir plus de détails dans le notebook de prétraitement](https://github.com/samms307/scoring_client_api/blob/main/Final_pr%C3%A9traitement.ipynb)**
 
 
 
