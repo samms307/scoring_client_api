@@ -101,9 +101,8 @@ Après avoir prétraité les données et éliminé tout risque de data leakage, 
 - **Explicabilité du modèle :**  Le modèle **LightGBM** a été utilisé pour les prédictions, et pour en comprendre les décisions, nous avons appliqué **LIME** pour expliquer chaque prédiction (ex : refus de prêt). L'**importance des caractéristiques** a permis d'identifier les variables influentes globalement (comme le revenu et l'historique de crédit). Ces méthodes assurent que les décisions du modèle sont compréhensibles et justifiables, répondant ainsi aux exigences réglementaires.
 
 
-👉 **[Voir le notebook de modélisation pour l'interprétation des résultats](lien_vers_notebook_modelisation)**
+👉 **[Voir le notebook de modélisation pour l'interprétation des résultats](https://github.com/samms307/scoring_client_api/blob/main/Final_Mod%C3%A9lisation.ipynb)**
 
----
 
 
 
