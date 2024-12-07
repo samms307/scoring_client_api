@@ -100,7 +100,7 @@ Après avoir prétraité les données et éliminé tout risque de data leakage, 
 - **Explicabilité du modèle :**  Le modèle **LightGBM** a été utilisé pour les prédictions, et pour en comprendre les décisions, nous avons appliqué **LIME** pour expliquer chaque prédiction (ex : refus de prêt). L'**importance des caractéristiques** a permis d'identifier les variables influentes globalement (comme le revenu et l'historique de crédit). Ces méthodes assurent que les décisions du modèle sont compréhensibles et justifiables, répondant ainsi aux exigences réglementaires.
 
 
--**Détection du Data Drift :**
+- **Détection du Data Drift :**
 Pour assurer la performance continue du modèle en production, nous avons surveillé l'évolution des données avec la `bibliothèque Evidently`. Evidently permet de détecter le Data Drift en comparant les distributions des données d'entrée en production avec celles des données d’entraînement. Cette surveillance du drift des données aide à identifier des écarts significatifs dans les caractéristiques des données, garantissant ainsi que le modèle continue à fournir des prédictions fiables même lorsque les données changent avec le temps.
 
 👉 **[Voir le notebook de modélisation pour l'interprétation des résultats](https://github.com/samms307/scoring_client_api/blob/main/Final_Mod%C3%A9lisation.ipynb)**
