@@ -78,8 +78,8 @@ Dans cette étape, l’objectif principal était de préparer les données et de
 Résumé des étapes principales :
 - **Nettoyage des données** J'ai éliminé les doublons, géré les valeurs manquantes et les valeurs aberrantes ou atypiques. Puis géré les modalités et encodé les variables catégorielles.
  
-- **Équilibrage des classes :**  Pour traiter l'imbalancement des classes, j'ai utilisé **SMOTE (Synthetic Minority Over-sampling Technique)** pour créer des exemples synthétiques de la classe minoritaire, équilibrant ainsi la distribution des classes dans les données.
-De plus, pour les modèles utilisés dans ce projet, j'ai intégré le paramètre class_weight='balanced', ce qui permet d'ajuster automatiquement les poids des classes et d'assurer une meilleure prise en compte des classes minoritaires dans l'entraînement du modèle.
+- **Équilibrage des classes :**  Pour traiter l'imbalancement des classes, j'ai utilisé `SMOTE` (Synthetic Minority Over-sampling Technique) pour créer des exemples synthétiques de la classe minoritaire, équilibrant ainsi la distribution des classes dans les données.
+De plus, pour les modèles utilisés dans ce projet, j'ai intégré le `paramètre class_weight='balanced'`, ce qui permet d'ajuster automatiquement les poids des classes et d'assurer une meilleure prise en compte des classes minoritaires dans l'entraînement du modèle.
   
 
 👉 **[ Voir plus de détails dans le notebook de prétraitement](https://github.com/samms307/scoring_client_api/blob/main/Final_pr%C3%A9traitement.ipynb)**
