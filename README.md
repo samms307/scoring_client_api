@@ -63,6 +63,30 @@ Le tableau de bord interactif permet de :
 
 
 
+## 📈 **Étapes Clés du Projet**
+
+### **1️⃣ Prétraitement des Données et Contrôle du Data Leakage**
+
+Dans cette étape, l’objectif principal était de préparer les données et de garantir qu'aucune **fuite de données** (data leakage) ne se produise. Voici les actions effectuées :
+
+#### **Contrôle du Data Leakage :**
+- **Contamination des ensembles d’entraînement et de test :**  Le prétraitement a été effectué uniquement sur l'ensemble d'entraînement pour éviter que les données de test n'influencent le modèle. Ensuite, les mêmes transformations (nettoyage, encodage, équilibrage) ont été appliquées de manière identique sur les données de test, afin de garantir une évaluation impartiale du modèle.
+  
+- **Fuite de données (fuite cible) :**  Pour éviter ce risque, j’ai vérifié que les variables explicatives ne contiennent pas d’informations qui ne seraient pas disponibles lors de la prédiction. Cela inclut l’analyse des variables temporelles pour éviter l'inclusion de données futures, ainsi qu’une étude approfondie des relations entre les variables explicatives et la cible pour garantir la pertinence des variables sélectionnées.
+
+#### **Prétraitement des Données :**
+Résumé des étapes principales :
+- **Nettoyage des données** J'ai éliminé les doublons, géré les valeurs manquantes et les valeurs aberrantes ou atypiques. Puis géré les modalités et encodé les variables catégorielles.
+ 
+- **Équilibrage des classes :**  Pour traiter l'imbalancement des classes, j'ai utilisé **SMOTE (Synthetic Minority Over-sampling Technique)** pour créer des exemples synthétiques de la classe minoritaire, équilibrant ainsi la distribution des classes dans les données.
+De plus, pour les modèles utilisés dans ce projet, j'ai intégré le paramètre class_weight='balanced', ce qui permet d'ajuster automatiquement les poids des classes et d'assurer une meilleure prise en compte des classes minoritaires dans l'entraînement du modèle.
+  
+
+👉 **[ Voir plus de détails dans le notebook de prétraitement](lien_vers_notebook_pretraitement)**
+
+
+
+
 
 
 
