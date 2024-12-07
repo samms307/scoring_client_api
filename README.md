@@ -86,7 +86,7 @@ De plus, pour les modèles utilisés dans ce projet, j'ai intégré le `paramèt
 
 
 
-2️⃣ **Modélisation**  
+### 2️⃣ **Modélisation**  
 Après avoir prétraité les données et éliminé tout risque de data leakage, le notebook suivant se concentre sur la construction et l’évaluation des modèles. Voici les points clés abordés dans cette phase :
 
 - **Sélection du modèle :** Nous avons comparé plusieurs modèles, à commencer par la régression logistique et en incluant des modèles plus complexes comme Random Forest et LightGBM, adaptés aux données déséquilibrées. Les performances ont été évaluées via la métrique AUC-ROC, en calculant la moyenne des scores et l'écart-type pour mesurer la stabilité. Pour assurer une évaluation robuste, nous avons utilisé une validation croisée stratifiée, garantissant que la proportion des classes reste constante dans chaque pli, ce qui évite tout biais dans l'entraînement et permet au modèle de mieux généraliser.
