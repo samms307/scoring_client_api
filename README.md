@@ -8,6 +8,7 @@ Le dataset se compose de plusieurs fichiers. Cependant pour ce projet nous avons
 - **application_test.csv** : Données utilisées pour tester le modèle après l'entraînement sur de nouvelles données en production.
 
 ## Objectifs du Projet  
+Ce projet propose une solution complète pour évaluer le risque de défaut de crédit des clients, combinant l’analyse de données, l’apprentissage automatique, et une interface utilisateur interactive.
 - Créer un modèle de classification supervisé pour prédire le risque de défaut de paiement des clients.  
 - Exposer le modèle via une **API FastAPI** afin de pouvoir l'utiliser pour des prédictions en ligne.  
 - Créer une interface **Streamlit** interactive pour faciliter l'utilisation du modèle.  
