@@ -37,7 +37,7 @@ Le tableau de bord interactif permet de :
 - **app/** : Contient les fichiers liés à l'application et à l'API.
   - `basic_app.py` : Application principale utilisant FastAPI.
   - `user_interface.py` : Interface utilisateur Streamlit.
-  - `utils_ui.py` : Fonctions utilitaires pour l'interface Streamlit.
+  - `utils_ui.py` : Fonctions utiles pour l'interface Streamlit.
 
 - **data/** : Données brutes et prétraitées.
   - `application_train.csv` : Données d'entraînement initiales.
